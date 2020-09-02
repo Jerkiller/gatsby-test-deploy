@@ -21,7 +21,7 @@ const TestPage = ({ data }) => (
 
 export const query = graphql`
 {
-  allFile(filter: { sourceInstanceName: { eq: "src" } }) {
+  allFile {
     edges {
       node {
         relativePath

@@ -20,7 +20,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "jest": "^26.4.2",
+    "babel-jest": "^26.3.0",
+    "react-test-renderer": "^16.13.1"
   },
   "devDependencies": {
     "prettier": "^1.17.1",
