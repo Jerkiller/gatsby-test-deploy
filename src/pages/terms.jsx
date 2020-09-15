@@ -6,9 +6,9 @@ import SEO from "../components/seo"
 const TermsPage = () => (
     <Layout>
         <SEO title="Terms Of Use"/>
-        <div className={"container"}>
-            <div className={"content"}>
-                <div className={"title"}>
+        <div className="container">
+            <div className="content">
+                <div className="title">
                     <h1>Terms Of Use</h1>
                 </div>
 
