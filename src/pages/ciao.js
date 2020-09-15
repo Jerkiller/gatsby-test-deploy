@@ -1,36 +1,48 @@
 
-
 import React, { /*useContext,*/ useEffect, useState } from 'react'
-import { graphql/*, useStaticQuery*/ } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-export default () => {
 
-  const [loading, setLoading] = useState(true)
-  let edges = []
+const CiaoPage = props => {
+  const { loading, data } = useStaticQuery(FETCH_FILES)
+  const FETCH_FILES = graphql
+  `
+  query FetchFiles {
+    allFile(filter: { sourceInstanceName: { eq: "src" } }) {
+      edges {
+        node {
+          relativePath
+          prettySize
+          extension
+          birthTime
+        }
+      }
+    }
+  }
+`
+  return (
+    <Layout>
+      <SEO title = "Ciao" />
+      <div className = "container" >
+          <h1>Ciao</h1>
+          {console.log(data)}
+      </div>
+    </Layout>
+  )
+}
 
+
+export default CiaoPage
+
+  /*
   const fetchFiles = async() => {
       console.log("fetch files");
       try {
-        /*
-        let files = useStaticQuery(
-          graphql(`
-            query {
-            allFile(filter: { sourceInstanceName: { eq: "src" } }) {
-              edges {
-                node {
-                  relativePath
-                  prettySize
-                  extension
-                  birthTime
-                }
-              }
-            }
-          }`)
-          )*/
-
+        
+        //let files = useStaticQuery(FETCH_FILES)
           
           let files = await graphql(`
           {
@@ -86,4 +98,4 @@ export default () => {
       </div>
     </Layout>
   )
-}
+}*/
