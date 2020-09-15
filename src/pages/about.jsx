@@ -1,10 +1,10 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import informationImage from "../../static/images/Information-document.svg"
-import eventImage from "../../static/images/Event-managment.svg"
-import ProductivityImage from "../../static/images/Increase-Productivity.svg"
-import happinessImage from "../../static/images/Make-happiness.svg"
+import React from 'react';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import informationImage from '../../static/images/Information-document.svg';
+import eventImage from '../../static/images/Event-managment.svg';
+import ProductivityImage from '../../static/images/Increase-Productivity.svg';
+import happinessImage from '../../static/images/Make-happiness.svg';
 
 const AboutPage = () => (
   <Layout>
@@ -34,7 +34,7 @@ const AboutPage = () => (
               <p>
                 Having a human management software for businesses and startups
                 is not always cost-effective. HiStaff allows companies to
-                archive their employees' documents and information free of
+                archive their employees&pos; documents and information free of
                 charge.
               </p>
             </div>
@@ -59,11 +59,11 @@ const AboutPage = () => (
               <img alt="Productivity" src={ProductivityImage} />
               <h3>Raise productivity</h3>
               <p>
-                Many factors are affecting the staff's productivity in the
+                Many factors are affecting the staff&pos;s productivity in the
                 workplace, the relationship between manager and staff and
                 environmental factors are the main factors, therefore we will
                 focus on these two factors in achieving our goal. Ultimately,
-                increasing employee's productivity results in increasing the
+                increasing employee&pos;s productivity results in increasing the
                 quality of products and services that are going to be provided.
               </p>
             </div>
@@ -84,6 +84,6 @@ const AboutPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default AboutPage
+export default AboutPage;

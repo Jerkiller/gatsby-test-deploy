@@ -1,11 +1,24 @@
 {
+    "parser": "babel-eslint",
     "extends": [
-        "airbnb",
-        "react-app",
-        "prettier",
-        "prettier/@typescript-eslint",
-        "prettier/babel",
-        "prettier/flowtype",
-        "prettier/react"
-    ]
+      "airbnb"
+    ],
+    "rules": {
+        //"prettier/prettier": ["error"],
+        "no-unused-expressions": 0,
+        "react/jsx-filename-extension": 0,
+        "default-case": 0,
+        "import/no-unresolved": 0,
+        "react/prefer-stateless-function": 0,
+        //"import/no-named-as-default": 0
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off",
+        "react/jsx-curly-newline": "off",
+        "max-len": "off"
+      },
+      "parserOptions": {
+        "sourceType": "module",
+        "import/extensions": [".jsx", ".js"],
+        "allowImportExportEverywhere": true
+      }
 }

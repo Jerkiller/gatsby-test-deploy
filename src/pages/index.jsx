@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import featureImage from "../../static/images/hero.png"
-import thumbnailEvent from "../../static/images/feature-event.png"
-import thumbnailBoard from "../../static/images/feature-board.png"
-import thumbnailNews from "../../static/images/feature-news.png"
-import thumbnailTeams from "../../static/images/feature-team.png"
-import thumbnailStaff from "../../static/images/feature-user.png"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import featureImage from '../../static/images/hero.png';
+import thumbnailEvent from '../../static/images/feature-event.png';
+import thumbnailBoard from '../../static/images/feature-board.png';
+import thumbnailNews from '../../static/images/feature-news.png';
+import thumbnailTeams from '../../static/images/feature-team.png';
+import thumbnailStaff from '../../static/images/feature-user.png';
 
 const IndexPage = () => (
   <Layout>
@@ -56,7 +56,8 @@ const IndexPage = () => (
                   Let the staff write down on the board freely,
                   <br />
                   Joking with each other and writing cool content can make the
-                  workplace more diverse and attractive for employees.{" "}
+                  workplace more diverse and attractive for employees.
+                  {' '}
                 </p>
               </div>
             </div>
@@ -143,13 +144,13 @@ const IndexPage = () => (
         </div>
 
         <div className="button">
-          <a href="https://app.histaff.io" target="_blank">
+          <a href="https://app.histaff.io" target="_blank" rel="noopener noreferrer">
             Get Started
           </a>
         </div>
       </div>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
