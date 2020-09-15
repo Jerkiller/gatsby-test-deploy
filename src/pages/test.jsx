@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 
 const TestPage = ({ data }) => (
@@ -14,7 +15,7 @@ const TestPage = ({ data }) => (
             <li key={x.node.relativePath}>
               {x.node.relativePath}
               {' '}
--
+              -
               {' '}
               {x.node.prettySize}
             </li>
@@ -39,3 +40,21 @@ export const query = graphql`
 `;
 
 export default TestPage;
+
+TestPage.propTypes = {
+  data: {
+    allFile: PropTypes.shape({
+      edges: PropTypes.array({
+
+      }),
+    }),
+  },
+};
+
+TestPage.defaultProps = {
+  data: {
+    allFile: {
+      edges: [],
+    },
+  },
+};

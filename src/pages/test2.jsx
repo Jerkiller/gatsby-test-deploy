@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import fetch from 'isomorphic-fetch';
 import Layout from '../components/layout';
 
 function TestPage2() {
